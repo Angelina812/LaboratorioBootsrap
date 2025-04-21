@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo de cursos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="nav">
+    <nav class="navbar">
+      <div class="logo">CursosOnline</div>
+      <img src="logo.jpg" alt="Logo CursosOnline" class="logo-img">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+              aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <div class="nav-1">
+          <a href="#inicio" class="nav-d">Inicio</a>
+          <a href="#cursos" class="nav-d">Cursos</a>
+          <a href="#contacto" class="nav-d">Contacto</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row m-2 col-12 text-center">
+    <h1>Bienvenido al catálogo de cursos online</h1>
+    <p>Aprende con nuestros cursos y mejora tus habilidades desde cualquier lugar</p>
+  </div>
+
+  <section id="cursos" class="row mt-4">
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <h5 class="titulo-curso text-center">Introducción a HTML</h5>
+      <div class="curso1">
+        <img src="html.png" class="card-img-top" alt="Introducción a HTML">
+        <div class="card-body d-flex flex-column">
+          <p class="card-text">Aprende la estructura básica de una página web usando etiquetas HTML fundamentales.</p>
+          <button class="btn btn-success mt-auto"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modal1">Click aquí</button> <!-- ← apunta a modal1 -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <h5 class="titulo-curso text-center">Introducción a CSS</h5>
+      <div class="curso2">
+        <img src="css.png" class="card-img-top" alt="Introducción a CSS">
+        <div class="card-body d-flex flex-column">
+          <p class="card-text">Aprende a darle estilos a tu página web creada con HTML.</p>
+          <button class="btn btn-success mt-auto"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modal2">Click aquí</button> <!-- ← CORRECCIÓN: modal2 -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <h5 class="titulo-curso text-center">Introducción a JavaScript</h5>
+      <div class="curso3">
+        <img src="js.png" class="card-img-top" alt="Introducción a JavaScript">
+        <div class="card-body d-flex flex-column">
+          <p class="card-text">Aprende a mejorar la interacción de tu página web usando JS</p>
+          <button class="btn btn-success mt-auto"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modal3">Click aquí</button> <!-- ← CORRECCIÓN: modal3 -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <h5 class="titulo-curso text-center">Diseño UX Básico</h5>
+      <div class="curso4">
+        <img src="ux.jpg" class="card-img-top" alt="Diseño UX Básico">
+        <div class="card-body d-flex flex-column">
+          <p class="card-text">Descubre los principios de la experiencia de usuario y aplica buenas prácticas de diseño en tus páginas responsive.</p>
+          <button class="btn btn-success mt-auto"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modal4">Click aquí</button> <!-- ← CORRECCIÓN: modal4 -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <h5 class="titulo-curso text-center">Introducción a Bootstrap</h5>
+      <div class="curso5">
+        <img src="bootstrap.jpeg" class="card-img-top" alt="Introducción a Bootstrap">
+        <div class="card-body d-flex flex-column">
+          <p class="card-text">Eleva tus páginas a otro nivel con un estilo interesante.</p>
+          <button class="btn btn-success mt-auto"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modal5">Click aquí</button> <!-- ← CORRECCIÓN: modal5 -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <h5 class="titulo-curso text-center">Diseño Responsive</h5>
+      <div class="curso6">
+        <img src="diseño.jpg" class="card-img-top" alt="Diseño Responsive">
+        <div class="card-body d-flex flex-column">
+          <p class="card-text">Aprende a estructurar una página web para que se adapte a cualquier pantalla.</p>
+          <button class="btn btn-success mt-auto"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modal6">Click aquí</button> <!-- ← CORRECCIÓN: modal6 -->
+        </div>
+      </div>
+    </div>
+
+  </section> <!-- ← cierra sección de cards -->
+
+  <!-- Modales -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Introducción a HTML</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button> <!-- ← CORRECCIÓN: siempre 'modal' -->
+        </div>
+        <div class="modal-body">
+          Aprende la estructura básica de una página web usando etiquetas HTML fundamentales.
+          <ul>
+            <li>Duración: 4 semanas</li>
+            <li>Nivel: Básico</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">Introducción a CSS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Aprende a darle estilos a tu página web creada con HTML.
+          <ul>
+            <li>Duración: 4 semanas</li>
+            <li>Nivel: Básico</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">Introducción a JavaScript</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Mejora la interacción de tu página web usando JavaScript.
+          <ul>
+            <li>Duración: 5 semanas</li>
+            <li>Nivel: Intermedio</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal4Label">Diseño UX Básico</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Descubre los principios de la experiencia de usuario y aplica buenas prácticas de diseño.
+          <ul>
+            <li>Duración: 3 semanas</li>
+            <li>Nivel: Básico</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal5Label">Introducción a Bootstrap</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Aprende a usar Bootstrap para estilizar y organizar tu contenido con rapidez.
+          <ul>
+            <li>Duración: 2 semanas</li>
+            <li>Nivel: Intermedio</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal6Label">Diseño Responsive</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Aprende a estructurar una página web para que se adapte a cualquier pantalla.
+          <ul>
+            <li>Duración: 4 semanas</li>
+            <li>Nivel: Intermedio</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS al final -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
